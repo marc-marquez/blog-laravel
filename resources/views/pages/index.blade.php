@@ -1,12 +1,13 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{config('app.name','LSAPP')}}</title>   
-    </head>
-    <body>
-        <h1>Welcome to Laravel</h1>
-        <p>This the Laravel application</p>
-    </body>
-</html>
+@extends('layouts.app')
+
+@section('content')
+    <div class="jumbotron text-center">
+        <h1 class="jumbotron-heading">Welcome to Laravel!</h1>
+        <p class="lead text-muted">This is my Laravel Application.</p>
+        <p>
+        <a href="#" class="btn btn-primary my-2">Main call to action</a>
+        <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+        </p>
+    </div>
+@endsection
+
