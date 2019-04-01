@@ -33,7 +33,7 @@
 
     <!--Scripts-->
     <script src="{{ secure_asset('js/app.js') }}"></script>
-    <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+    <script src="{{ secure_asset('/vendor/unisharp/laravel-ckeditor/ckeditor.js')}}""></script>
     <script>
         CKEDITOR.replace( 'article-ckeditor' );
     </script>
